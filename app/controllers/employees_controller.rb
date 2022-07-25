@@ -3,5 +3,9 @@ class EmployeesController < ApplicationController
         @employee = Employee.find(params[:id])
     end
 
-    
+    def update
+        employee = Employee.find(params[:id])
+        # ticket = Ticket.find
+        binding.pry
+    end
 end
